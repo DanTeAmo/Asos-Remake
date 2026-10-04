@@ -1,0 +1,73 @@
+# ASOS Remake
+
+## Figma
+
+https://www.figma.com/design/KW07A4HkxtoUKNSSt0nnfR/Untitled?node-id=0-1&t=oCM585RT7ChKM1FS-1
+
+## Technology
+
+Use:
+
+- React
+- JavaScript
+- HTML / JSX
+- CSS
+
+Do NOT use TypeScript.
+
+## Assets
+
+### /assets/brands-logo
+Contains original brand logos.
+
+### /assets/icons
+Contains original SVG icons used by the interface.
+
+Examples:
+- search-icon.svg
+- profile-icon.svg
+- liked-items.svg
+- market-bag.svg
+
+Use these original SVG files instead of replacing them with icon libraries.
+
+### /assets/products
+Contains product images that can be used inside ProductCard components.
+
+## References
+
+The `/references` folder contains visual references.
+
+Files inside `/references` must NOT automatically be used as complete UI elements.
+
+They should primarily be used to reproduce the appearance of the Figma design.
+
+### Product card references
+
+Some product cards may exist only as a complete raster image containing:
+
+- product image
+- product title
+- price
+- background
+
+Do NOT use the whole image as the final ProductCard.
+
+Instead recreate it as a real React component using:
+
+- separate product image where possible
+- HTML / JSX title
+- HTML / JSX price
+- CSS styling
+
+The reference image should only be used to make the recreated ProductCard visually as close as possible to the original.
+
+If an individual product image cannot be found, attempt to extract or approximate the product image from the provided reference while keeping the title and price as real HTML text.
+
+## Main goal
+
+The final website must reproduce the Figma design as accurately as possible.
+
+Figma is the main visual source of truth.
+
+Do not redesign or simplify the interface unless technically necessary.
