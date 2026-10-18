@@ -6,6 +6,6 @@ const columns = [
 export default function Footer() {
   return <footer className="footer">
     <div className="footer__columns">{columns.map((column) => <section key={column.title}><h2>{column.title}</h2><ul>{column.links.map(([label, href]) => <li key={label}><a href={href}>{label}</a></li>)}</ul></section>)}</div>
-    <div className="footer__bottom"><span>© 2026 ASOS</span><div><a href="https://www.asos.com/about/">ASOS details</a><span> | </span><a href="https://www.asos.com/privacy-policy/">Privacy & Cookies</a><span> | </span><a href="https://www.asos.com/terms-and-conditions/">Ts&Cc</a><span> | </span><a href="https://www.asos.com/accessibility/">Accessibility</a></div></div>
+    <div className="footer__bottom"><span>ASOS-inspired concept · 2026</span><div><a href="https://www.asos.com/about/">ASOS details</a><span aria-hidden="true"> | </span><a href="https://www.asos.com/privacy-policy/">Privacy & Cookies</a><span aria-hidden="true"> | </span><a href="https://www.asos.com/terms-and-conditions/">Terms & Conditions</a><span aria-hidden="true"> | </span><a href="https://www.asos.com/accessibility/">Accessibility</a></div></div>
   </footer>;
 }

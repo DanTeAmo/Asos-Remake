@@ -11,10 +11,11 @@ export const fits = [
 ].map((fit) => ({ ...fit, image: asset(`products/jeans/photos/${fit.file}.webp`) }));
 
 export const products = [
-  { id: 'nike-dunk', title: 'Nike Dunk Low Retro trainers in off white and grey', price: '€119.99', image: asset('products/shoes/photos/nike-dunk-low.webp') },
-  { id: 'fred-perry-featured', title: 'Fred Perry B721 logo leather trainers in white', price: '€123.99', image: asset('products/shoes/photos/fred-perry-b721-shadow.webp'), featured: true },
-  { id: 'fred-perry', title: 'Fred Perry B721 logo leather trainers in white', price: '€123.99', image: asset('products/shoes/photos/fred-perry-b721.webp') },
-  { id: 'nike-jordan', title: 'Nike Air Jordan 1 Low trainers in grey, black and white', price: '€129.99', image: asset('products/shoes/photos/nike-air-jordan-low.webp') },
+  { id: 'nike-dunk', title: 'Nike Dunk Low Retro trainers in off white and grey', priceInCents: 11999, brand: 'Nike', image: asset('products/shoes/photos/nike-dunk-low.webp') },
+  { id: 'fred-perry', title: 'Fred Perry B721 logo leather trainers in white', priceInCents: 12399, brand: 'Fred Perry', image: asset('products/shoes/photos/fred-perry-b721.webp') },
+  { id: 'nike-jordan', title: 'Nike Air Jordan 1 Low trainers in grey, black and white', priceInCents: 12999, brand: 'Nike', image: asset('products/shoes/photos/nike-air-jordan-low.webp') },
+  { id: 'studio-sage-runner', title: 'Studio Edit retro running trainers in silver and sage', priceInCents: 8999, brand: 'Studio Edit', generated: true, description: 'A retro running silhouette with silver mesh, sage detailing and an ivory sole.', image: asset('products/shoes/photos/studio-sage-runner.webp') },
+  { id: 'studio-navy-court', title: 'Studio Edit suede court trainers in navy and ivory', priceInCents: 7999, brand: 'Studio Edit', generated: true, description: 'A low-profile court silhouette in navy and ivory, finished with a honey-gum sole.', image: asset('products/shoes/photos/studio-navy-court.webp') },
 ];
 
 export const brands = [
