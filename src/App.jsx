@@ -50,8 +50,8 @@ export default function App() {
           <a className="hero__secondary" href="#hyped">Discover the trainer edit <span aria-hidden="true">↓</span></a>
         </div>
         <div className="hero__visual" aria-hidden="true">
-          <img className="hero__image hero__image--first" src={fits[1].image} alt="" width="486" height="616" fetchPriority="high" />
-          <img className="hero__image hero__image--second" src={fits[0].image} alt="" width="484" height="616" />
+          <img className="hero__image hero__image--first" src={fits[1].image} alt="" width="960" height="1225" fetchPriority="high" />
+          <img className="hero__image hero__image--second" src={fits[0].image} alt="" width="960" height="1225" />
           <span className="hero__caption">Denim, in your own way.</span>
         </div>
       </section>

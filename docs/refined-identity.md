@@ -56,7 +56,7 @@ The design is an additive presentation stylesheet after the existing styles, wit
 - Mobile menu, department persistence, Escape dismissal, dialog keyboard containment and opener focus restoration passed.
 - No browser runtime errors during these checks.
 
-Current photographs are the pre-existing, relatively small exports with baked-in gradients. Large original photographs would improve sharpness and remove the export artefacts; no new photography is claimed here. Core Web Vitals require measurement on the deployed site with real traffic.
+The six denim photographs were refreshed on 2026-10-19 with 960 × 1225 px images from ASOS, replacing the small Figma exports with baked-in gradients. The existing fit grid and hero share these assets. Sources and product-to-fit mapping are recorded in [the denim source notes](../assets/products/jeans/SOURCES.md). Core Web Vitals require measurement on the deployed site with real traffic.
 
 ## Run
 
