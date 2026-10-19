@@ -4,7 +4,7 @@ Implemented on `design/asos-refined-identity`, based on `8b15b6c` in the existin
 
 ## Direction
 
-An editorial denim issue: warm paper, near-black ink, a high-contrast ASOS wordmark, serif display typography, quiet utility typography and generous photography. This applies the already selected Concept A rather than exploring a replacement identity. Interface language remains English.
+An editorial denim issue: neutral white, near-black ink and grey surfaces, a high-contrast ASOS wordmark, serif display typography, quiet utility typography and generous photography. The user confirmed neutral monochrome: no cream, brown or coloured interface accents. Photographs retain their original colours. This applies the already selected Concept A rather than exploring a replacement identity. Interface language remains English.
 
 ## Editable identity
 
@@ -16,13 +16,13 @@ This is a reconstruction, not the original designer's Bézier master. A supplied
 
 | Role | Value |
 | --- | --- |
-| Paper | `#F8F6F1` |
-| Ink | `#24221F` |
-| Muted text | `#68635C` |
-| Rules | `#D8D3CA` (decorative) |
-| Secondary surface | `#EEEBE5` |
-| Focus | `#7D4927` |
-| Footer secondary text | `#D1CBC1` |
+| Paper | `#FFFFFF` |
+| Ink | `#171717` |
+| Muted text | `#626262` |
+| Rules | `#D6D6D6` (decorative) |
+| Secondary surface | `#F2F2F2` |
+| Focus | `#171717` on light surfaces; `#FFFFFF` in the footer |
+| Footer secondary text | `#CCCCCC` |
 | Display | Georgia, Times New Roman, serif; weight 400, italic emphasis |
 | Utility and body | Existing self-hosted Open Sans variable WOFF2 |
 | Hero | 68–112px desktop; 64–84px phone; line-height .98 |
