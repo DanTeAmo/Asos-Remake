@@ -6,7 +6,7 @@ import BrandSection from './components/BrandSection.jsx';
 import Footer from './components/Footer.jsx';
 import ShopDialog from './components/ShopDialog.jsx';
 import useStoredShopping from './hooks/useStoredShopping.js';
-import { products } from './data/catalog.js';
+import { products, fits } from './data/catalog.js';
 import { addToBag, MAX_QUANTITY, normalizeBag, normalizeSaved } from './data/shopping.js';
 
 const validIds = products.map((product) => product.id);
@@ -43,9 +43,19 @@ export default function App() {
     <Header onSearch={(query) => openPanel({ type: 'search', query })} onPanel={(type) => openPanel({ type })} wishlistCount={saved.length} bagCount={itemCount} />
     <main id="main-content" tabIndex={-1}>
       <section className="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Choose your style</h1>
-        <div className="hero__intro"><p>Find your denim fit. Meet your next favourite trainers.</p><a href="#fits">Explore the fits <span aria-hidden="true">↘</span></a></div>
+        <div className="hero__copy">
+          <p className="eyebrow">The denim issue / No. 01</p>
+          <h1 id="hero-title">A fit.<br />A feeling.<br /><em>All you.</em></h1>
+          <div className="hero__intro"><p>Considered shapes. Everyday expression.<br />Find the denim that feels like you.</p><a className="editorial-button" href="#fits">Explore the fits <span aria-hidden="true">↗</span></a></div>
+          <a className="hero__secondary" href="#hyped">Discover the trainer edit <span aria-hidden="true">↓</span></a>
+        </div>
+        <div className="hero__visual" aria-hidden="true">
+          <img className="hero__image hero__image--first" src={fits[1].image} alt="" width="486" height="616" fetchPriority="high" />
+          <img className="hero__image hero__image--second" src={fits[0].image} alt="" width="484" height="616" />
+          <span className="hero__caption">Denim, in your own way.</span>
+        </div>
       </section>
+      <div className="editorial-note"><span>Made for your everyday.</span><p>Six silhouettes. Endless possibilities.</p><a href="#fits">Find your fit <span aria-hidden="true">↗</span></a></div>
       <FitSection /><ProductCarousel onSelect={selectProduct} /><BrandSection />
     </main>
     <Footer />

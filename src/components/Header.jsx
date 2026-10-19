@@ -1,10 +1,16 @@
 import { useRef, useState } from 'react';
-import { asset } from '../data/catalog.js';
 import { departments, departmentNavigation } from '../data/navigation.js';
 import useDepartment from '../hooks/useDepartment.js';
+import Wordmark from './Wordmark.jsx';
 
 export function Icon({ name, className = '' }) {
-  return <img className={`icon ${className}`} src={asset(`icons/${name}.svg`)} alt="" aria-hidden="true" width="32" height="32" />;
+  const paths = {
+    'search-icon': <><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></>,
+    'profile-icon': <><circle cx="12" cy="8" r="3.5" /><path d="M4 21v-2a8 8 0 0 1 16 0v2" /></>,
+    'liked-items': <path d="M20.5 5.5a5 5 0 0 0-7 0L12 7l-1.5-1.5a5 5 0 0 0-7 7L12 21l8.5-8.5a5 5 0 0 0 0-7Z" />,
+    'market-bag': <><path d="M3 7h18v14H3z" /><path d="M8 8V6a4 4 0 0 1 8 0v2" /></>,
+  };
+  return <svg className={`icon ${className}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" width="24" height="24">{paths[name]}</svg>;
 }
 
 function DepartmentButtons({ className, department, onSelect }) {
@@ -23,7 +29,7 @@ export default function Header({ onSearch, onPanel, wishlistCount, bagCount }) {
   return <header className="header" onKeyDown={(event) => { if (event.key === 'Escape' && menuOpen) closeMenu(); }}>
     <div className="header__main">
       <button ref={menuButton} className="menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(!menuOpen)}><span /><span /><span /></button>
-      <a href="#top" className="logo" aria-label="ASOS home" onClick={() => setMenuOpen(false)}>Asos</a>
+      <a href="#top" className="logo" aria-label="ASOS home" onClick={() => setMenuOpen(false)}><Wordmark /></a>
       <DepartmentButtons className="gender-tabs" department={department} onSelect={setDepartment} />
       <form className="search" onSubmit={search} role="search">
         <input type="search" aria-label="Search trainers" aria-describedby="search-help" placeholder="Search trainers" value={query} onChange={(event) => setQuery(event.target.value)} maxLength={120} />

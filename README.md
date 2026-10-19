@@ -16,6 +16,8 @@ The original Figma brief is preserved in `README`. Its export, `references/WebSi
 
 ## Design
 
+The `design/asos-refined-identity` branch applies the approved **Concept A — Refined** identity to this existing storefront. See [the direction, editable SVG, design tokens and verification notes](docs/refined-identity.md). `src/refined.css` is the presentation layer; the shopping hooks, data and behavior remain shared. The following paragraphs document the earlier Figma baseline.
+
 The original monochrome palette, Open Sans, large tracked headline, denim photography, trainer cards and brand grid remain. The usability pass adds a short hero introduction and CTA, consistent heading insets, responsive image proportions, readable footer text, larger touch targets and a consistent card treatment. The page no longer claims exact coordinate fidelity to the original Figma export.
 
 The site is centred at up to 1440 px. CSS adapts at 1279, 1023, 768, 600 and 480 px. Denim uses six, three or two columns. The trainer carousel shows three cards on desktop, two on tablets and one below 481 px, leaving clear side gutters for the arrows. Five unique products rotate in a continuous loop, one card per arrow click. Offscreen edge cards enable seamless motion and remain inert.

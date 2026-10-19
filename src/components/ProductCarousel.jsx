@@ -117,7 +117,7 @@ export default function ProductCarousel({ onSelect }) {
 
   const windowIndices = carouselWindow(first, visibleCount, products.length);
   return <section className="hyped-section" id="hyped" aria-labelledby="hyped-title">
-    <div className="section-heading"><h2 id="hyped-title" tabIndex={-1}>Your most hyped</h2><p>The trainer edit · {products.length} styles</p></div>
+    <div className="section-heading"><div><p className="eyebrow">02 / The trainer edit</p><h2 id="hyped-title" tabIndex={-1}>Grounded in style.</h2></div><p>Your most hyped · {products.length} styles</p></div>
     <div className="carousel" ref={carousel} role="region" aria-roledescription="carousel" aria-label="Most hyped trainers" style={{ '--columns': visibleCount, ...(arrowPosition ? { '--arrow-left': `${arrowPosition.left}px`, '--arrow-right': `${arrowPosition.right}px`, '--arrow-top': `${arrowPosition.top}px` } : {}) }}>
       <div className="carousel__viewport" ref={viewport} id="trainer-track" tabIndex={0} aria-label="Trainer carousel. Use left and right arrow keys to move one style."
         onKeyDown={(event) => {
