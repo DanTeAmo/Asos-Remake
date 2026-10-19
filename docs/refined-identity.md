@@ -1,6 +1,6 @@
 # ASOS / Concept A — Refined
 
-Implemented on `design/asos-refined-identity`, based on `8b15b6c` in the existing `DanTeAmo/Asos-Remake` checkout. The desktop-folder checkout points to the older `ad49751` revision; this branch retains the newer shopping and carousel improvements. The main branch is unchanged.
+Implemented on `design/asos-refined-identity`, based on `8b15b6c` in the existing `DanTeAmo/Asos-Remake` checkout. At the start, the desktop-folder checkout pointed to the older `ad49751` revision. Following the user's request to apply the design to the current storefront, `main` incorporates the approved monochrome design and retains the newer shopping and carousel improvements. The experimental branch remains available separately.
 
 ## Direction
 
@@ -60,4 +60,4 @@ Current photographs are the pre-existing, relatively small exports with baked-in
 
 ## Run
 
-From this repository, run `npm ci` if dependencies are absent, then `npm run dev`. For the production version use `npm run build` followed by `npm run preview`. The server prints the local URL. This work is local and has not been pushed or deployed.
+From this repository, run `npm ci` if dependencies are absent, then `npm run dev`. For the production version use `npm run build` followed by `npm run preview`. The server prints the local URL. The approved source is maintained in GitHub `main`; deployment is a separate step.
